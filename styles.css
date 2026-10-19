@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    font-family: Roboto, sans-serif;
+    background-color: #f9fafb;
+    color: #111827;
+}
+
+/* Sidebar: background photo, logo, and credit */
+.sidebar {
+    width: 35%;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-banner {
+    margin-top: 22vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+}
+
+.logo-banner img {
+    width: 100px;
+}
+
+.logo-banner h1 {
+    font-family: Cinzel, serif;
+    font-size: 72px;
+    color: white;
+    margin: 0;
+}
+
+.photo-credit {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 16px;
+}
+
+.photo-credit a {
+    color: white;
+}
+
+/* Main content */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro {
+    padding: 0 48px;
+    max-width: 740px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.signup-form {
+    background-color: white;
+    padding: 24px 48px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.signup-form h2 {
+    margin: 0 0 24px;
+    font-weight: 400;
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 64px;
+    max-width: 640px;
+}
+
+.field {
+    width: calc(50% - 32px);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+label {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+input {
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+input[type="password"]:user-invalid {
+    border-color: red;
+}
+
+/* Button and log in link */
+.actions {
+    padding: 32px 48px;
+}
+
+button {
+    background-color: #596d48;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 56px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.actions a {
+    color: #596d48;
+    font-weight: bold;
+    text-decoration: none;
+}
